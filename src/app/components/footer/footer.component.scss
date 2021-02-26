@@ -1,0 +1,14 @@
+@import '../../../shared_classes.scss';
+@import '../../../variables.scss';
+
+.footer-wrapper {
+  background-color: $grey;
+  
+  p {
+    color: #fff;
+    font-size: $text-xs-font-size;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    padding: $grid-spacing-large;
+  }
+}

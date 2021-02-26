@@ -1,0 +1,19 @@
+@import '../../../shared_classes.scss';
+@import '../../../variables.scss';
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 $grid-spacing-large;
+
+  input {
+    border: none;
+    width: inherit;
+    padding-left: $grid-spacing-large/4;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

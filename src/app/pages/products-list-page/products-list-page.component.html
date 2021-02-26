@@ -1,0 +1,108 @@
+<section class="products-list-section">
+  <!-- <div class="teste"> -->
+    <ng-container *ngIf="productsList.length > 0">
+  
+      <!-- Beer -->
+      <section *ngIf="beerProducts.length > 0">
+        <h1 class="category-title">Cervejas</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let beer of beerProducts">
+            <div class="card">
+              <app-product-card
+                [title]="beer.title"
+                [price]="beer.productVariants[0].price"
+                [imgSrc]="beer.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+  
+      <!-- Destilled -->
+      <section *ngIf="distilledProducts.length > 0">
+        <h1 class="category-title">Destilados</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let destilled of distilledProducts">
+            <div class="card">
+              <app-product-card
+                [title]="destilled.title"
+                [price]="destilled.productVariants[0].price"
+                [imgSrc]="destilled.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+      
+      <!-- Wine -->
+      <section *ngIf="wineProducts.length > 0">
+        <h1 class="category-title">Vinhos</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let wine of wineProducts">
+            <div class="card">
+              <app-product-card
+                [title]="wine.title"
+                [price]="wine.productVariants[0].price"
+                [imgSrc]="wine.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+  
+      <!-- Alcoholess -->
+      <section *ngIf="alcoholessProducts.length > 0">
+        <h1 class="category-title">Sem álcool</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let alcoholess of alcoholessProducts">
+            <div class="card">
+              <app-product-card
+                [title]="alcoholess.title"
+                [price]="alcoholess.productVariants[0].price"
+                [imgSrc]="alcoholess.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+  
+      <!-- Snacks -->
+      <section *ngIf="snacksProducts.length > 0">
+        <h1 class="category-title">Petiscos</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let snack of snacksProducts">
+            <div class="card">
+              <app-product-card
+                [title]="snack.title"
+                [price]="snack.productVariants[0].price"
+                [imgSrc]="snack.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+  
+      <!-- Snacks -->
+      <section *ngIf="othersProduts.length > 0">
+        <h1 class="category-title">Outros</h1>
+        <div class="category-wrapper">
+          <ng-container *ngFor="let other of othersProduts">
+            <div class="card">
+              <app-product-card
+                [title]="other.title"
+                [price]="other.productVariants[0].price"
+                [imgSrc]="other.images[0].url">
+              </app-product-card>
+            </div>
+          </ng-container>
+        </div>
+      </section>
+    </ng-container>
+  
+    <ng-container *ngIf="productsList.length === 0">
+      <div class="loading">
+        <img src="../../../assets/download.gif">
+      </div>
+    </ng-container>
+  <!-- </div> -->
+</section>

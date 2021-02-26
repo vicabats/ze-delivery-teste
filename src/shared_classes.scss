@@ -1,0 +1,62 @@
+@import 'variables';
+
+// Button classes
+.yellow-button {
+  background-color: $bright-yellow;
+  color: $black;
+  padding: $grid-spacing-small;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: $text-s-font-size;
+
+  &:hover {
+    background-color: $black;
+    color: $bright-yellow;
+  }
+}
+
+.yellow-button-transparent {
+  background-color: transparent;
+  color: $bright-yellow;
+  font-size: $text-xs-font-size;
+  text-transform: uppercase;
+  padding: $grid-spacing-small;
+  cursor: pointer;
+  border: 1px solid $bright-yellow;
+  border-radius: $border-radius;
+  height: 48px;
+  outline: none;
+  
+  &:hover {
+    background-color: $bright-yellow;
+    color: $light-black;
+  }
+}
+
+// Input classes
+.default-input {
+  height: 48px;
+  border-radius: $border-radius/3;
+  background-color: $white;
+  font-size: $text-s-font-size;
+}
+
+// Product card classes
+
+.product-title {
+  font-size: $text-xs-font-size;
+  color: $grey;
+  text-align: left;
+  margin-bottom: $grid-spacing-small;
+}
+
+.product-price {
+  font-size: $text-s-font-size;
+  font-weight: $font-weight-bold;
+  color: $black;
+}
+
+.product-img {
+  height: 96px;
+  align-self: center;
+}

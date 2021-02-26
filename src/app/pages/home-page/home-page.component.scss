@@ -1,0 +1,32 @@
+@import '../../../shared_classes.scss';
+@import '../../../variables.scss';
+
+.header-wrapper {
+  background-image: url('../../../assets/header.jpg');
+  background-size: cover;
+  height: 85vh;
+}
+
+.header-welcome {
+  text-align: center;
+  padding: $grid-spacing-large * 4 $grid-spacing-large * 12;
+
+  @media(max-width: $mobile) {
+    padding: $grid-spacing-large * 4 $grid-spacing-large;
+  }
+
+  h1 {
+    font-size: $title-xl-font-size;
+    color: $light-black;
+    font-weight: $font-weight-light;
+    padding-bottom: $grid-spacing-large;
+
+    span {
+      font-weight: $font-weight-bolder;
+    }
+  }
+}
+
+.error-feedback {
+  padding: $grid-spacing-small 0;
+}

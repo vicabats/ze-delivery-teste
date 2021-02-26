@@ -1,0 +1,20 @@
+@import '../../../shared_classes.scss';
+@import '../../../variables.scss';
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $light-black;
+  height: 5rem;
+  padding: 0 $grid-spacing-large * 4;
+
+  @media (max-width: $mobile) {
+    padding: 0 $grid-spacing-large;
+  }
+
+  img {
+    height: 3rem;
+    cursor: pointer;
+  }
+}

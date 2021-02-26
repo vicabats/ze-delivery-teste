@@ -1,0 +1,13 @@
+<div class="header-wrapper">
+  <div class="header-welcome">
+    <h1><span>Bebidas geladas</span> a <span>preço</span> de mercado na sua casa <span>agora</span></h1>
+    <app-autocomplete-address-input>
+    </app-autocomplete-address-input>
+  </div>
+
+  <ng-container *ngIf="errorFeedback">
+    <p class="error-feedback">
+      {{errorFeedback}}
+    </p>
+  </ng-container>
+</div>

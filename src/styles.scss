@@ -1,0 +1,15 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: auto;
+  min-height: 100vh;
+}

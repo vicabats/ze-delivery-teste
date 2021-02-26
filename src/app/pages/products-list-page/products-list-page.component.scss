@@ -1,0 +1,34 @@
+@import '../../../shared_classes.scss';
+@import '../../../variables.scss';
+
+.products-list-section {
+  padding: $grid-spacing-large * 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+.category-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .card {
+    padding-bottom: $grid-spacing-large;
+    margin-right: $grid-spacing-small;
+  
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+}
+
+.category-title {
+  margin-bottom: $grid-spacing-small;
+}
+
+.loading {
+  align-self: center;
+  height: 100vh;
+}
