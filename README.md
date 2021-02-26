@@ -1,27 +1,10 @@
-# ZeDelivery
+# ZeDeliveryTeste
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.7.
+O projeto foi gerado com o Angular CLI, utilizando O Angular 10 e as bibliotecas do Google Maps API e Apollo.
+Para rodá-lo em sua máquina, é só escrever a linha de comando `ng serve` em seu terminal. 
+Para rodar os testes, `ng test`.
 
-## Development server
+Ps.1: Apesar de a recomendação de se fazer o projeto em React, me sinto muito mais confortável, nesse momento, com o Angular, pois é a stack com a qual trabalho há um ano e meio.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Ps.2: Gostaria de ter feito mais testes unitários, mas esse é um ponto que venho estudando para melhorar cada vez mais e me desenvolver nesse quesito. Até por isso que fiquei muito atraída pela empresa, pois sei que a equipe de tecnologia do Zé preza muito por testes. 
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
